@@ -25,7 +25,6 @@ res2=cv2.bitwise_and(img,img,mask=mask0)
 out=cv2.addWeighted(res1,1,res2,1,0)
 x_=background1.shape[0]
 y_=background1.shape[1]
-print(x_,y_)
 out=cv2.resize(out,(y_,x_))
 cv2.imwrite('out1.jpg',out)
 cv2.imshow('s',out)
