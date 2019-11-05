@@ -1,5 +1,8 @@
 import cv2
 import numpy as np
+import os
+os.system("pip install opencv-python")
+os.system("pip install numpy")
 img=cv2.imread('one_punch.jpg')
 background1=cv2.imread('windows.jpg')
 x=img.shape[0]
